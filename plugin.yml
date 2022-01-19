@@ -1,0 +1,13 @@
+name: Playerinfo
+author: SandhyR
+api: 4.0.0
+version: 1
+main: SandhyR\Playerinfo\Main
+
+commands:
+  player:
+    permission: playerinfo.use
+
+permissions:
+  playerinfo.use:
+    default: true
