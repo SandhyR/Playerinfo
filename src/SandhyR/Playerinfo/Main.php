@@ -18,7 +18,7 @@ class Main extends PluginBase{
                 $sender->sendMessage("Usage /player <playername>");
                 return false;
             }
-            $name = implode($args);
+            $name = implode(" ", $args);
             $os = ["Unknown", "Android", "iOS", "macOS", "FireOS", "GearVR", "HoloLens", "Windows 10", "Windows", "Dedicated", "Orbis", "Playstation 4", "Nintento Switch", "Xbox One"];
             $controls = ["Unknown", "Mouse & Keyboard", "Touch", "Controller"];
             $player = Server::getInstance()->getPlayerByPrefix($name);
